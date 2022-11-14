@@ -4,6 +4,7 @@ workflow:
   test_deploy: 
     jobs: 
       - test
+      - build
 
 jobs: 
   build: 
