@@ -14,7 +14,7 @@ jobs:
       - checkout
       - 
         run: 
-          command: "npm install"
+          command: "npm -version"
           name: "Install dependancies"
       - 
         run: 
