@@ -12,7 +12,6 @@ jobs:
       - checkout
       - run: 
           name: Install dependancies
-          command: node --version
           command: npm install 
       - run:
           name: Run tests
