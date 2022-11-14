@@ -8,13 +8,11 @@ workflow:
 jobs: 
   build: 
     docker: 
-      - 
-        image: "cimg/node:19.0.1"
+      - image: "cimg/node:19.0.1"
     steps: 
       - checkout
-      - 
         run: 
-          command: "npm -version"
+          command: "sudo npm install -y"
           name: "Install dependancies"
       - 
         run: 
