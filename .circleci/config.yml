@@ -1,0 +1,13 @@
+version: 2.1
+
+workflow:
+  test_deploy:
+    jobs:
+      - test
+jobs:
+  build:
+    docker:
+      - image: cimg/node:19.0.1
+    steps:
+      - checkout
+      - run: node --version
