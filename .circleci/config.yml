@@ -12,7 +12,7 @@ jobs:
     steps: 
       - checkout
       - run: 
-          command: "sudo npm install -y"
+          command: "npm install"
           name: "Install dependancies"
       - run: 
           command: "npm run test"
