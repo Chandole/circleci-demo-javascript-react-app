@@ -8,12 +8,12 @@ workflow:
 jobs: 
   build: 
     docker: 
-      - image: "cimg/node:19.0.1"
+      - image: cimg/node:19.0.1
     steps: 
       - checkout
       - run: 
-          command: "npm install"
-          name: "Install dependancies"
+          command: npm install
+          name: Install dependancies
       - run: 
-          command: "npm run test"
-          name: "Run tests"
+          command: npm run test
+          name: Run tests
