@@ -11,10 +11,9 @@ jobs:
       - image: "cimg/node:19.0.1"
     steps: 
       - checkout
-        run: 
+      - run: 
           command: "sudo npm install -y"
           name: "Install dependancies"
-      - 
-        run: 
+      - run: 
           command: "npm run test"
           name: "Run tests"
